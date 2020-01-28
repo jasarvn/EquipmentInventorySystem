@@ -5,6 +5,10 @@
     {
       "library": "font-awesome@5.11.2",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "jsgrid@1.5.3",
+      "destination": "wwwroot/lib/jsgrid/"
     }
   ]
 }

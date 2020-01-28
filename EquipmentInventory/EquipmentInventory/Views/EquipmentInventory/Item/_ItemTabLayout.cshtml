@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.min.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
-    <!--link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/jsgrid/jsgrid.min.js"></script>
+    <link rel="stylesheet" href="~/lib/jsgrid/jsgrid-theme.min.css" />
+    <link rel="stylesheet" href="~/lib/jsgrid/jsgrid-theme.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
 </head>
@@ -19,24 +24,20 @@
         </div>
         <div class="grid_nav_bar">
             <ul>
-                <li><a class="active" asp-area="" asp-controller="Employee" asp-action="Index"><i class="fas fa-user" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i>Employee</a></li>
-                <li><a asp-area="" asp-controller="Item" asp-action="Index"><i class="fas fa-box-open" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Item Management</a></li>
-                <li><a asp-area="" asp-controller="Settings" asp-action="Index"><i class="fas fa-tools" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Settings</a></li>
+                <li><a class="active" asp-area="" asp-controller="Employee" asp-action="Index"><i class="fas fa-user"></i>Employee</a></li>
+                <li><a asp-area="" asp-controller="Item" asp-action="Index"><i class="fas fa-box-open" ></i> Item Management</a></li>
+                <li><a asp-area="" asp-controller="Settings" asp-action="Index"><i class="fas fa-tools"></i> Settings</a></li>
             </ul>
         </div>
         <div class="flex_column"></div>
         <div class="grid_admin_info">
-            <div style="text-align: right;-ms-grid-column: 1;-ms-grid-row:1; ">
-                <div style="font-size: 11pt;padding-top: 10px;padding-right: 10px;">Jasper Arvin L. Abella</div>
-                <div style="font-size: 8pt;padding-right: 10px;line-height: 1;">I.D. No.: 00000001</div>
+            <div class ="grid_admin_info_div1">
+                <div class ="grid_admin_info_div1_1">Jasper Arvin L. Abella</div>
+                <div class ="grid_admin_info_div1_2">I.D. No.: 00000001</div>
             </div>
-            <div style="-ms-grid-column: 2;-ms-grid-row:1;">
-                <div style="        position: relative;
-        top: 15px;
-        left: 10px;
-        cursor: pointer;
-        display: inline-block;" title="Logout">
-                    <i class="fas fa-sign-out-alt" style="font-size: 16pt;">
+            <div class ="grid_admin_info_div2">
+                <div class="grid_admin_info_div2_1" title="Logout">
+                    <i class="fas fa-sign-out-alt">
                     </i>
                 </div>
             </div>
@@ -46,17 +47,17 @@
 
     <div class="div_container">
         <div class="side_bar">
-            <div style="color: #222740;font-size: 15pt;background: #5c6bab;padding: 10px 0px;text-align:center;font-weight: bolder;text-shadow: 0px 1px 0px rgba(120, 138, 227, .5);">
+            <div class="side_bar_1">
                 Item Management
             </div>
 
             <ul>
-                <li><a class="active" href="#home">Manage Item</a></li>
+                <li><a href="#home">Manage Item</a></li>
                 <li><a href="#news">Department</a></li>
                 <li><a href="#news">Employee</a></li>
             </ul>
         </div>
-        <div style="-ms-grid-column:2;-ms-grid-row: 1;">
+        <div class="main_container">
             @RenderBody();
         </div>
     </div>
@@ -67,8 +68,7 @@
         </div>
     </div>
 
-    <footer class="border-top" style="-ms-grid-column: 1;
-        -ms-grid-row: 4;">
+    <footer class="border-top">
     </footer>
 
 

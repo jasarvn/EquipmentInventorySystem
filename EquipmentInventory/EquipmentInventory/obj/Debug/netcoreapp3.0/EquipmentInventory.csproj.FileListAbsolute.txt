@@ -295,3 +295,5 @@ C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\Equipm
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\_EmployeeTabLayout.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\Index.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.Properties.Resources.resources
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.csproj.GenerateResource.cache

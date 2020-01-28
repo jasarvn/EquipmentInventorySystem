@@ -3,5 +3,262 @@
 *@
 @{
     Layout = "~/Views/EquipmentInventory/Employee/_EmployeeTabLayout.cshtml";
-
 }
+
+<style>
+    .main_container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1000px 1fr;
+        -ms-grid-rows: 50px 450px 1fr;
+        grid-template-columns: 1000px 1fr;
+        grid-template-rows: 50px 450px 1fr;
+    }
+</style>
+
+<div style="grid-column: 1/2;grid-row: 1/2;
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;text-align: center;">
+    <h3 style="padding-top: 20px">Employee Management</h3>
+</div>
+
+<div style="        grid-column: 1/2;
+        grid-row: 2/3;
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        display: grid;
+        grid-template-columns: 280px 280px 280px 280px;
+        grid-template-rows: 250px 250px 250px;
+        padding-left: 20px;
+        padding-top: 20px;
+        display: -ms-grid;
+        -ms-grid-columns:280px 280px 280px 280px;
+        -ms-grid-rows: 250px 250px 250px;
+">
+
+    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 1;-ms-grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 3fr 1fr;
+
+        background: white;
+        cursor:pointer;
+    ">
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row:1;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+
+        padding: 20px 40px;">
+            <div style="        background: #de533e;
+        border-radius: 50%;
+        border-radius: 50%;
+        background-image: url('Resources/user_Icon.png');
+        background-repeat: no-repeat, repeat;
+        background-size: 80%;
+        background-position: center center
+    ">
+            </div>
+        </div>
+        <div style="        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        text-align: center;
+        color: #294280;">
+            <h6>Register Employee</h6>
+        </div>
+
+    </div>
+
+    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 2;-ms-grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 3fr 1fr;
+
+        background: white;
+        cursor: pointer;
+    ">
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row:1;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+
+        padding: 20px 40px;">
+            <div style="        background: #de533e;
+        border-radius: 50%;
+        background-image: url('Resources/UserUpdate_Icon.png');
+        background-repeat: no-repeat, repeat;
+        background-size: 80%;
+        background-position: center center
+    ">
+            </div>
+        </div>
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        text-align: center;color: #294280;">
+            <h6>Update Employee Information</h6>
+        </div>
+
+    </div>
+
+    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 3;-ms-grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 3fr 1fr;
+
+        background: white;
+        cursor: pointer;
+    ">
+        <div style="        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+        padding: 20px 40px;">
+            <div style="        background: #de533e;
+        border-radius: 50%;
+        border-radius: 50%;
+        background-image: url('Resources/UserRemove_Icon.png');
+        background-repeat: no-repeat, repeat;
+        background-size: 80%;
+        background-position: center center
+    ">
+            </div>
+        </div>
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        text-align: center;">
+            <h6>Remove Employee</h6>
+        </div>
+
+    </div>
+
+    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 4;-ms-grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 3fr 1fr;
+
+        background: white;
+        cursor: pointer
+    ">
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row:1;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+
+        padding: 20px 40px;">
+            <div style="background: #de533e; 
+                        border-radius: 50%; 
+                        border-radius: 50%; 
+                        background-image: url('Resources/UserReinstate_Icon.png'); 
+                        background-repeat: no-repeat, repeat; 
+                        background-size: 80%; 
+                        background-position: center center; 
+                        border-radius: 50%;">
+            </div>
+        </div>
+        <div style="
+        -ms-grid-column: 1;
+        -ms-grid-row: 2;
+        text-align: center;">
+            <h6>Re-Instate Employee</h6>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div style="-ms-grid-column: 1; -ms-grid-row: 1;
+          display: grid;
+          grid-template-columns: 230px 230px 230px 230px;
+          grid-template-rows: 250px 250px 250px;
+          padding-left: 20px;padding-top: 50px;
+
+          display: -ms-grid;
+          -ms-grid-columns:  200px 200px 200px 200px;
+          -ms-grid-rows: 250px 250px 250px;
+          ">
+     <div style="background: yellow;-ms-grid-column: 1;-ms-grid-row: 1;margin-right: 30px;"></div>
+     <div style="background: yellow;-ms-grid-column: 2;-ms-grid-row: 1;margin-right: 30px;"></div>
+     <div style="background: yellow;-ms-grid-column: 3;-ms-grid-row: 1;margin-right: 30px;"></div>
+     <div style="background: yellow;-ms-grid-column: 4;-ms-grid-row: 1;margin-right: 30px;"></div>
+
+ </div>-->
+<!--   <div id="jsGrid"></div>
+<script>
+    var clients = [
+        { "Name": "Otto Clay", "Age": 25, "Country": 1, "Address": "Ap #897-1459 Quam Avenue", "Married": false },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2, "Address": "Ap #370-4647 Dis Av.", "Married": true },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3, "Address": "Ap #365-8835 Integer St.", "Married": false },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1, "Address": "911-5143 Luctus Ave", "Married": true },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3, "Address": "Ap #614-689 Vehicula Street", "Married": false }
+    ];
+
+    var countries = [
+        { Name: "", Id: 0 },
+        { Name: "United States", Id: 1 },
+        { Name: "Canada", Id: 2 },
+        { Name: "United Kingdom", Id: 3 }
+    ];
+
+    $("#jsGrid").jsGrid({
+        width: "100%",
+        height: "400px",
+
+        inserting: true,
+        editing: true,
+        sorting: true,
+        paging: true,
+
+        data: clients,
+
+        fields: [
+            { name: "Name", type: "text", width: 150, validate: "required" },
+            { name: "Age", type: "number", width: 50 },
+            { name: "Address", type: "text", width: 200 },
+            { name: "Country", type: "select", items: countries, valueField: "Id", textField: "Name" },
+            { name: "Married", type: "checkbox", title: "Is Married", sorting: false },
+            { type: "control" }
+        ]
+    });
+</script>-->
