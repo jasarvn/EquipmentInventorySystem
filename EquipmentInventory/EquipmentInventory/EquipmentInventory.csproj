@@ -34,4 +34,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\css\ItemTab\" />
+    <Folder Include="wwwroot\css\SettingsTab\" />
+  </ItemGroup>
+
 </Project>

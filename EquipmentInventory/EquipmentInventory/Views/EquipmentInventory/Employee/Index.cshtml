@@ -4,204 +4,54 @@
 @{
     Layout = "~/Views/EquipmentInventory/Employee/_EmployeeTabLayout.cshtml";
 }
+<link rel="stylesheet" href="~/css/EmployeeTab/ManageEmployee/EmployeeMangementDashBoard.css"/>
 
-<style>
-    .main_container {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1000px 1fr;
-        -ms-grid-rows: 50px 450px 1fr;
-        grid-template-columns: 1000px 1fr;
-        grid-template-rows: 50px 450px 1fr;
-    }
-</style>
 
-<div style="grid-column: 1/2;grid-row: 1/2;
-            -ms-grid-column: 1;
-            -ms-grid-row: 1;text-align: center;">
-    <h3 style="padding-top: 20px">Employee Management</h3>
+<div class="index_headerArea">
+    <h4 >Employee Management</h4>
 </div>
 
-<div style="        grid-column: 1/2;
-        grid-row: 2/3;
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        display: grid;
-        grid-template-columns: 280px 280px 280px 280px;
-        grid-template-rows: 250px 250px 250px;
-        padding-left: 20px;
-        padding-top: 20px;
-        display: -ms-grid;
-        -ms-grid-columns:280px 280px 280px 280px;
-        -ms-grid-rows: 250px 250px 250px;
-">
+<div class="index_cardArea">
 
-    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 1;-ms-grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 3fr 1fr;
-
-        background: white;
-        cursor:pointer;
-    ">
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row:1;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 1fr;
-
-        padding: 20px 40px;">
-            <div style="        background: #de533e;
-        border-radius: 50%;
-        border-radius: 50%;
-        background-image: url('Resources/user_Icon.png');
-        background-repeat: no-repeat, repeat;
-        background-size: 80%;
-        background-position: center center
-    ">
+    <div class="menu_card grid-col1 grid_row1">
+        <div class="menu_card_div1 grid-col1 grid_row1">
+            <div class="menu_card_div1_1" style=" background-image: url('Resources/user_Icon.png'); ">
             </div>
         </div>
-        <div style="        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        text-align: center;
-        color: #294280;">
+        <div class="menu_card_div2 grid_col1 grid_row2">
             <h6>Register Employee</h6>
         </div>
 
     </div>
 
-    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 2;-ms-grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 3fr 1fr;
-
-        background: white;
-        cursor: pointer;
-    ">
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row:1;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 1fr;
-
-        padding: 20px 40px;">
-            <div style="        background: #de533e;
-        border-radius: 50%;
-        background-image: url('Resources/UserUpdate_Icon.png');
-        background-repeat: no-repeat, repeat;
-        background-size: 80%;
-        background-position: center center
-    ">
+    <div class="menu_card grid_col2 grid_row1">
+        <div class="menu_card_div1 sgrid_col1 grid_row1">
+            <div class="menu_card_div1_1" style="background-image: url('Resources/UserUpdate_Icon.png');">
             </div>
         </div>
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        text-align: center;color: #294280;">
+        <div class="menu_card_div2 grid_col1 grid_row2">
             <h6>Update Employee Information</h6>
         </div>
 
     </div>
 
-    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 3;-ms-grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 3fr 1fr;
-
-        background: white;
-        cursor: pointer;
-    ">
-        <div style="        -ms-grid-column: 1;
-        -ms-grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 1fr;
-        padding: 20px 40px;">
-            <div style="        background: #de533e;
-        border-radius: 50%;
-        border-radius: 50%;
-        background-image: url('Resources/UserRemove_Icon.png');
-        background-repeat: no-repeat, repeat;
-        background-size: 80%;
-        background-position: center center
-    ">
+    <div class="menu_card grid_col3 grid_row1">
+        <div class="menu_card_div1 grid_col1 grid_row1">
+            <div class="menu_card_div1_1" style="background-image: url('Resources/UserRemove_Icon.png');">
             </div>
         </div>
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        text-align: center;">
+        <div class="menu_card_div2 grid_col1 grid_row2">
             <h6>Remove Employee</h6>
         </div>
 
     </div>
 
-    <div class="box-shadow-card box-shadow-card2 menu_card" style="-ms-grid-column: 4;-ms-grid-row: 1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 3fr 1fr;
-
-        background: white;
-        cursor: pointer
-    ">
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row:1;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-        display: -ms-grid;
-        -ms-grid-columns: 1fr;
-        -ms-grid-rows: 1fr;
-
-        padding: 20px 40px;">
-            <div style="background: #de533e; 
-                        border-radius: 50%; 
-                        border-radius: 50%; 
-                        background-image: url('Resources/UserReinstate_Icon.png'); 
-                        background-repeat: no-repeat, repeat; 
-                        background-size: 80%; 
-                        background-position: center center; 
-                        border-radius: 50%;">
+    <div class="menu_card grid_col4 grid_row1">
+        <div class="menu_card_div1 grid_col1 grid_row1">
+            <div class="menu_card_div1_1" style="background-image: url('Resources/UserReinstate_Icon.png');">
             </div>
         </div>
-        <div style="
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
-        text-align: center;">
+        <div class="menu_card_div2 grid_col1 grid_row2">
             <h6>Re-Instate Employee</h6>
         </div>
 
