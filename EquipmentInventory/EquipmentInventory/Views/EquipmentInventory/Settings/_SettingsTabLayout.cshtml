@@ -52,12 +52,12 @@
             </div>
 
             <ul>
-                <li><a class="active" href="#home">Department</a></li>
-                <li><a href="#news">Admin Settings</a></li>
+                <li><a class="active"  asp-area="" asp-controller="Settings" asp-action="Index">Department</a></li>
+                <li><a asp-area="" asp-controller="Settings" asp-action="AdminSettings">Admin Setting</a></li>
             </ul>
         </div>
         <div class="main_container">
-            @RenderBody();
+            @RenderBody()
         </div>
     </div>
 

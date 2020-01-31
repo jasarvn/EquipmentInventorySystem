@@ -52,13 +52,13 @@
             </div>
 
             <ul>
-                <li><a href="#home">Manage Item</a></li>
-                <li><a href="#news">Department</a></li>
-                <li><a href="#news">Employee</a></li>
+                <li><a asp-area="" asp-controller="Item" asp-action="Index">Manage Item</a></li>
+                <li><a asp-area="" asp-controller="Item" asp-action="Department">Department</a></li>
+                <li><a asp-area="" asp-controller="Item" asp-action="Employee">Employee</a></li>
             </ul>
         </div>
         <div class="main_container">
-            @RenderBody();
+            @RenderBody()
         </div>
     </div>
 

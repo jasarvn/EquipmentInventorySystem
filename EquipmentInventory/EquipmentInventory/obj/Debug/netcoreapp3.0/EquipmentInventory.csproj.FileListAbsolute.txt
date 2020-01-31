@@ -273,7 +273,6 @@ C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\Equipm
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.TagHelpers.output.cache
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.RazorCoreGenerate.cache
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Index.cshtml.g.cs
-C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Item\Index.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Item\_ItemTabLayout.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Welcome.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\_Layout.cshtml.g.cs
@@ -289,11 +288,16 @@ C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\Equipm
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.dll
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.pdb
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.csprojAssemblyReference.cache
-C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Settings\Index.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Settings\_SettingsTabLayout.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\bin\Debug\netcoreapp3.0\libman.json
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\_EmployeeTabLayout.cshtml.g.cs
-C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\Index.cshtml.g.cs
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.Properties.Resources.resources
 C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\EquipmentInventory.csproj.GenerateResource.cache
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\ManageEmployee\Index.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Item\ManageItem\Index.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Settings\Department\Index.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Employee\Department\DepartmentDashBoard.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Item\Department\DepartmentDashBoard.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Item\Employee\EmployeeDashBoard.cshtml.g.cs
+C:\Users\jasarvn\source\repos\EquipmentInventorySystem\EquipmentInventory\EquipmentInventory\obj\Debug\netcoreapp3.0\Razor\Views\EquipmentInventory\Settings\AdminSettings\AdminSettingsDashBoard.cshtml.g.cs

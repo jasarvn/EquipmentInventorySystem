@@ -10,7 +10,11 @@ namespace EquipmentInventory.Controllers.EquipmentInventory.Settings
     {
         public IActionResult Index()
         {
-            return View("~/Views/EquipmentInventory/Settings/Index.cshtml");
+            return View("~/Views/EquipmentInventory/Settings/department/Index.cshtml");
+        }
+        public IActionResult AdminSettings()
+        {
+            return View("~/Views/EquipmentInventory/Settings/AdminSettings/AdminSettingsDashboard.cshtml");
         }
     }
 }

@@ -10,7 +10,15 @@ namespace EquipmentInventory.Controllers.EquipmentInventory.Item
     {
         public IActionResult Index()
         {
-            return View("~/Views/EquipmentInventory/Item/Index.cshtml");
+            return View("~/Views/EquipmentInventory/Item/ManageItem/Index.cshtml");
+        }
+        public IActionResult Department()
+        {
+            return View("~/Views/EquipmentInventory/Item/Department/DepartmentDashBoard.cshtml");
+        }
+        public IActionResult Employee()
+        {
+            return View("~/Views/EquipmentInventory/Item/Employee/EmployeeDashBoard.cshtml");
         }
     }
 }
