@@ -5,7 +5,17 @@
     Layout = "~/Views/EquipmentInventory/Employee/_EmployeeTabLayout.cshtml";
 }
 <link rel="stylesheet" href="~/css/EmployeeTab/ManageEmployee/EmployeeMangementDashBoard.css"/>
+<style>
+    .menu_card:hover {
+        background: #7ca9fc;
+    }
 
+    .menu_card:hover h6 {
+        background: #7ca9fc;
+        color:white;
+        font-size: 14pt;
+    }
+</style>
 
 <div class="index_headerArea">
     <h4 >Employee Management</h4>
@@ -13,9 +23,9 @@
 
 <div class="index_cardArea">
 
-    <div class="menu_card grid-col1 grid_row1">
+    <div id="card" class="menu_card grid-col1 grid_row1">
         <div class="menu_card_div1 grid-col1 grid_row1">
-            <div class="menu_card_div1_1" style=" background-image: url('Resources/user_Icon.png'); ">
+            <div class="menu_card_div1_1" style=" background-image: url('Resources/user_Icon1.png'); ">
             </div>
         </div>
         <div class="menu_card_div2 grid_col1 grid_row2">
@@ -26,18 +36,19 @@
 
     <div class="menu_card grid_col2 grid_row1">
         <div class="menu_card_div1 sgrid_col1 grid_row1">
-            <div class="menu_card_div1_1" style="background-image: url('Resources/UserUpdate_Icon.png');">
+            <div class="menu_card_div1_1" style="        background-image: url('Resources/UserUpdate_Icon1.png');
+">
             </div>
         </div>
         <div class="menu_card_div2 grid_col1 grid_row2">
-            <h6>Update Employee Information</h6>
+            <h6>Update Information</h6>
         </div>
 
     </div>
 
-    <div class="menu_card grid_col3 grid_row1">
+    <div class="menu_card grid_col3 grid_row1" >
         <div class="menu_card_div1 grid_col1 grid_row1">
-            <div class="menu_card_div1_1" style="background-image: url('Resources/UserRemove_Icon.png');">
+            <div class="menu_card_div1_1" style="background-image: url('Resources/UserRemove_Icon1.png');">
             </div>
         </div>
         <div class="menu_card_div2 grid_col1 grid_row2">
@@ -48,7 +59,7 @@
 
     <div class="menu_card grid_col4 grid_row1">
         <div class="menu_card_div1 grid_col1 grid_row1">
-            <div class="menu_card_div1_1" style="background-image: url('Resources/UserReinstate_Icon.png');">
+            <div class="menu_card_div1_1" style="background-image: url('Resources/UserReinstate_Icon1.png');">
             </div>
         </div>
         <div class="menu_card_div2 grid_col1 grid_row2">

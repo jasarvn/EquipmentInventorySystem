@@ -59,7 +59,7 @@
 }
 
 .menu_card_div1_1 {
-    background: #de533e;
+    /* background: #de533e;*/
     border-radius: 50%;
     border-radius: 50%;
     background-repeat: no-repeat, repeat;
@@ -70,4 +70,8 @@
 .menu_card_div2 {
     text-align: center;
     color: #294280;
+}
+
+.menu_card h6 {
+    -webkit-transition: font-size .15s;
 }
