@@ -17,23 +17,23 @@
     <link rel="stylesheet" href="~/css/site.css" />
 
 </head>
-<body >
-    <header class ="border-bottom box-shadow">
-        <div class="grid_brand" >
+<body>
+    <header class="border-bottom box-shadow">
+        <div class="grid_brand">
             Equipment Inventory
         </div>
         <div class="grid_nav_bar">
-                <ul>
-                  <li><a class="active"   asp-area="" asp-controller="Employee" asp-action="Index"><i class="fas fa-user" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i>Employee</a></li>
-                  <li><a asp-area="" asp-controller="Item" asp-action="Index"><i class="fas fa-box-open"  style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Item Management</a></li>
-                  <li><a asp-area="" asp-controller="Settings" asp-action="Index"><i class="fas fa-tools" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Settings</a></li>
-                </ul>
+            <ul>
+                <li><a class="active" asp-area="" asp-controller="Employee" asp-action="Index"><i class="fas fa-user" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i>Employee</a></li>
+                <li><a asp-area="" asp-controller="Item" asp-action="Index"><i class="fas fa-box-open" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Item Management</a></li>
+                <li><a asp-area="" asp-controller="Settings" asp-action="Index"><i class="fas fa-tools" style="padding-right: 10px;font-size:14pt;color: #3B5957;text-shadow: 0px 1px 0px #343a40;"></i> Settings</a></li>
+            </ul>
         </div>
         <div class="flex_column"></div>
         <div class="grid_admin_info">
-            <div class ="grid_admin_info_div1">
-                <div class ="grid_admin_info_div1_1">Jasper Arvin L. Abella</div>
-                <div class ="grid_admin_info_div1_2">I.D. No.: 00000001</div>
+            <div class="grid_admin_info_div1">
+                <div class="grid_admin_info_div1_1">Jasper Arvin L. Abella</div>
+                <div class="grid_admin_info_div1_2">I.D. No.: 00000001</div>
             </div>
             <div class="grid_admin_info_div2">
                 <div class="grid_admin_info_div2_1" title="Logout">
@@ -45,14 +45,14 @@
 
     </header>
 
-    <div class ="div_container">
+    <div class="div_container">
         <div class="side_bar">
             <div class="side_bar_1">
                 Settings
             </div>
 
             <ul>
-                <li><a class="active"  asp-area="" asp-controller="Settings" asp-action="Index">Department</a></li>
+                <li><a class="active" asp-area="" asp-controller="Settings" asp-action="Index">Department</a></li>
                 <li><a asp-area="" asp-controller="Settings" asp-action="AdminSettings">Admin Setting</a></li>
             </ul>
         </div>
@@ -63,14 +63,14 @@
 
     <div class="div_row_flex">
         <div class="side_bar">
-            
+
         </div>
     </div>
-   
-    <footer class ="border-top" >
 
+    <footer class="border-top" style="display: grid; grid-template-rows: 1fr; grid-template-columns: 100px 350px 1fr">
+        <div style="padding: 10px 0px 0px 10px;"><span>Powerd by:</span></div>
+        <div class="footer_logo"></div>
     </footer>
-
 
 </body>
 </html>
