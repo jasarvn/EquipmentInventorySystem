@@ -16,5 +16,9 @@ namespace EquipmentInventory.Controllers.EquipmentInventory.Employee
         {
             return View("~/Views/EquipmentInventory/Employee/Department/DepartmentDashBoard.cshtml");
         }
+        public IActionResult empAssignToDept()
+        {
+            return View("~/Views/EquipmentInventory/Employee/Department/empAssignToDepartment.cshtml");
+        }
     }
 }

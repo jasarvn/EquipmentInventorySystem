@@ -1,0 +1,146 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/EquipmentInventory/Employee/_EmployeeTabLayout.cshtml";
+}
+<style>
+    .footer_logo {
+        background-repeat: no-repeat, repeat;
+        background-size: 25%;
+        background-position: left center;
+        background-image: url('../Resources/logo3.png');
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 10px;
+    }
+
+    .div_container {
+        display: -ms-grid;
+        -ms-grid-columns: 200px 1150px 1fr;
+        -ms-grid-rows: 1fr;
+        display: grid;
+        grid-template-columns: 200px 1150px 1fr;
+        grid-template-rows: 1fr;
+    }
+
+.div_row_flex {
+    display: -ms-grid;
+    -ms-grid-columns: 200px 1150px 1fr;
+    -ms-grid-rows: 1fr;
+    display: grid;
+    grid-template-columns: 200px 1150px 1fr;
+    grid-template-rows: 1fr;
+}
+
+body {
+   
+    grid-template-rows: 50px 550px 1fr 50px;
+}
+
+</style>
+<div style="
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 30px 1fr;
+">
+    <div style="background: yellow;">
+
+    </div>
+    <div style="
+        display: grid;
+        grid-template-columns: 525px 1fr 525px;
+        grid-template-rows: 1fr;
+    ">
+        <div>
+
+            <div id="jsGrid"></div>
+            
+            
+            
+        </div>
+        <div></div>
+        <div>
+            <div id="jsGrid2"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var clients = [
+        { "Employee Id": "Otto Clay", "Name": 25, "Country": 1 },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
+        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
+        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
+        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
+        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
+        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
+        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
+        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
+        { "Name": "Ramona Benton", "Age": 32, "Country": 3 }
+    ];
+
+    var countries = [
+        { Name: "", Id: 0 },
+        { Name: "United States", Id: 1 },
+        { Name: "Canada", Id: 2 },
+        { Name: "United Kingdom", Id: 3 }
+    ];
+
+    $("#jsGrid").jsGrid({
+        height: "500px",
+        inserting: false,
+        editing: false,
+        sorting: true,
+        paging: true,
+        rowNum: 9999,
+        pageSize: 6,
+        data: clients,
+
+        fields: [
+            { name: "Employee Id", type: "text", width: 50, validate: "required" },
+            { name: "Name", type: "number", width: 260 },
+            { name: "HireDate", type: "select", width: 260, items: countries, valueField: "Id", textField: "Name" },
+
+        ]
+    });
+
+    $("#jsGrid2").jsGrid({
+        height: "500px",
+        inserting: false,
+        editing: false,
+        sorting: true,
+        paging: true,
+        rowNum: 9999,
+        pageSize: 6,
+        data: clients,
+
+        fields: [
+            { name: "Employee Id", type: "text", width: 50, validate: "required" },
+            { name: "Name", type: "number", width: 260 },
+            { name: "HireDate", type: "select", width: 260, items: countries, valueField: "Id", textField: "Name" },
+
+        ]
+    });
+
+</script>
