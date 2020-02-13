@@ -3,68 +3,41 @@
 *@
 @{
     Layout = "~/Views/EquipmentInventory/Employee/_EmployeeTabLayout.cshtml";
+
 }
+<link rel="stylesheet" href="~/css/EmployeeTab/Department/empAssignToDepartment.css" />
 <style>
-    .footer_logo {
-        background-repeat: no-repeat, repeat;
-        background-size: 25%;
-        background-position: left center;
-        background-image: url('../Resources/logo3.png');
-    }
-
-    .main_container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        padding: 10px;
-    }
-
-    .div_container {
-        display: -ms-grid;
-        -ms-grid-columns: 200px 1150px 1fr;
-        -ms-grid-rows: 1fr;
-        display: grid;
-        grid-template-columns: 200px 1150px 1fr;
-        grid-template-rows: 1fr;
-    }
-
-.div_row_flex {
-    display: -ms-grid;
-    -ms-grid-columns: 200px 1150px 1fr;
-    -ms-grid-rows: 1fr;
-    display: grid;
-    grid-template-columns: 200px 1150px 1fr;
-    grid-template-rows: 1fr;
-}
-
-body {
    
-    grid-template-rows: 50px 550px 1fr 50px;
-}
+
 
 </style>
-<div style="
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 30px 1fr;
-">
-    <div style="background: yellow;">
-
+<div class="page_container_div">
+    <div class="grid_row1 grid_col1 page_title">
+        <div class="grid_col1 grid-row1" style="background: green"></div>
+        <div class="grid_col2 grid-row1"></div>
+        <div class="grid_col3 grid-row1" style="background: green"></div>
     </div>
-    <div style="
-        display: grid;
-        grid-template-columns: 525px 1fr 525px;
-        grid-template-rows: 1fr;
-    ">
-        <div>
 
-            <div id="jsGrid"></div>
-            
-            
-            
+    <div class="grid_row2 grid_col1 page_level_div">
+        <div class="grid_col1 grid-row1" style="background: red"></div>
+        <div class="grid_col2 grid-row1"></div>
+        <div class="grid_col3 grid-row1" style="background: red"></div>
+    </div>
+
+    <div class="grid_row3 grid_col1 page_level_search" >
+        <div class="grid_col1 grid-row1" style="background: yellow"></div>
+        <div class="grid_col2 grid-row1"></div>
+        <div class="grid_col3 grid-row1" style="background: yellow"></div>
+    </div>
+
+    <div class="grid_col1 grid_row4 div_grid_container">
+        <div >
+            <div id="jsGrid" style="-ms-grid-column:1; -ms-grid-row: 1;"></div>
         </div>
-        <div></div>
-        <div>
+
+        <div style="-ms-grid-column:2; -ms-grid-row: 1;"></div>
+        
+        <div style="-ms-grid-column:3; -ms-grid-row: 1;">
             <div id="jsGrid2"></div>
         </div>
 
@@ -73,42 +46,39 @@ grid-template-rows: 30px 1fr;
 
 <script>
     var clients = [
-        { "Employee Id": "Otto Clay", "Name": 25, "Country": 1 },
-        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
-        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
-        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
-        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
-        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
-        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
-        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
-        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
-        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
-        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
-        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
-        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
-        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
-        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
-        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
-        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
-        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
-        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
-        { "Name": "Ramona Benton", "Age": 32, "Country": 3 },
-        { "Name": "Otto Clay", "Age": 25, "Country": 1 },
-        { "Name": "Connor Johnston", "Age": 45, "Country": 2 },
-        { "Name": "Lacey Hess", "Age": 29, "Country": 3 },
-        { "Name": "Timothy Henson", "Age": 56, "Country": 1 },
-        { "Name": "Ramona Benton", "Age": 32, "Country": 3 }
+        { "Id": 25,"Name": "Otto Clay","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Connor Johnston","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Lacey Hess","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Timothy Henson","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Ramona Benton","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Otto Clay","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Connor Johnston","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Lacey Hess","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Timothy Henson","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Ramona Benton","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Otto Clay","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Connor Johnston","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Lacey Hess","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Timothy Henson","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Ramona Benton","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Otto Clay","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Connor Johnston","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Lacey Hess","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Timothy Henson","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Ramona Benton","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Otto Clay","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Connor Johnston","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Lacey Hess","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Timothy Henson","HireDate":"08/30/1981" },
+        { "Id": 25,"Name":"Ramona Benton","HireDate":"08/30/1981" }
     ];
 
-    var countries = [
-        { Name: "", Id: 0 },
-        { Name: "United States", Id: 1 },
-        { Name: "Canada", Id: 2 },
-        { Name: "United Kingdom", Id: 3 }
-    ];
+   
 
     $("#jsGrid").jsGrid({
-        height: "500px",
+        height: "440px",
+        width: "100%",
+        filtering: false,
         inserting: false,
         editing: false,
         sorting: true,
@@ -118,15 +88,16 @@ grid-template-rows: 30px 1fr;
         data: clients,
 
         fields: [
-            { name: "Employee Id", type: "text", width: 50, validate: "required" },
-            { name: "Name", type: "number", width: 260 },
-            { name: "HireDate", type: "select", width: 260, items: countries, valueField: "Id", textField: "Name" },
-
+            { name: "Selected", type: "checkbox", width: 20, title: ""},
+            { name: "Id", type: "text", width: 65, validate: "required" },
+            { name: "Name", type: "number", width: 220,align: "left" },
+            { name: "HireDate", type: "Date",align: "center", width: 220 },
+            
         ]
     });
 
     $("#jsGrid2").jsGrid({
-        height: "500px",
+        height: "440px",
         inserting: false,
         editing: false,
         sorting: true,
@@ -136,11 +107,14 @@ grid-template-rows: 30px 1fr;
         data: clients,
 
         fields: [
-            { name: "Employee Id", type: "text", width: 50, validate: "required" },
-            { name: "Name", type: "number", width: 260 },
-            { name: "HireDate", type: "select", width: 260, items: countries, valueField: "Id", textField: "Name" },
+            { name: "Id", type: "text", width: 85},
+            { name: "Name", type: "number", width: 220 },
+            { name: "HireDate",type: "Date", width: 220,  align: "center" },
 
         ]
     });
 
+
+   
 </script>
+

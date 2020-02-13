@@ -216,8 +216,28 @@ header li a i {
 }
 
 footer {
-    -ms-grid-column: 1; 
+    -ms-grid-column: 1;
     -ms-grid-row: 4;
+
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 100px 350px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 350px 1fr
+}
+
+.footer_logo {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    background-repeat: no-repeat, repeat;
+    background-size: 25%;
+    background-position: left center;
+    background-image: url('/Resources/logo3.png?v=1234');
+}
+
+.footer_dev {
+    padding: 10px 0px 0px 10px;
 }
 
 .grid_col1 {

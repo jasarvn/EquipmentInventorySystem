@@ -1,0 +1,109 @@
+﻿
+.main_container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+    padding: 10px;
+}
+
+.div_container {
+    display: -ms-grid;
+    -ms-grid-columns: 200px 1150px 1fr;
+    -ms-grid-rows: 1fr;
+    display: grid;
+    grid-template-columns: 200px 1150px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.div_row_flex {
+    display: -ms-grid;
+    -ms-grid-columns: 200px 1150px 1fr;
+    -ms-grid-rows: 1fr;
+    display: grid;
+    grid-template-columns: 200px 1150px 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+#jsGrid {
+    font-size: 10pt;
+}
+
+#jsGrid2 {
+    font-size: 10pt;
+}
+
+/* header row */
+.jsgrid-header-row > .jsgrid-header-cell {
+    text-align: center;
+    background: #474747;
+    color: white;
+}
+
+.jsgrid-cell {
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.jsgrid-align-right {
+    text-align: right !important;
+}
+
+.jsgrid-align-center {
+    text-align: center !important;
+}
+
+.jsgrid-align-left {
+    text-align: left !important;
+}
+
+
+.page_container_div {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 30px 1fr;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 30px 30px 30px 1fr;
+}
+
+    .page_container_div .page_title {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 525px 1fr 525px;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 525px 1fr 525px;
+        -ms-grid-rows: 1fr;
+     }
+
+    .page_container_div .page_level_div {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 525px 1fr 525px;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 525px 1fr 525px;
+        -ms-grid-rows: 1fr;
+    }
+
+    .page_container_div .page_level_search {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 525px 1fr 525px;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 525px 1fr 525px;
+        -ms-grid-rows: 1fr;
+    }
+
+    .page_container_div .div_grid_container {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 525px 1fr 525px;
+        grid-template-rows: 1fr;
+        -ms-grid-columns: 525px 1fr 525px;
+        -ms-grid-rows: 1fr;
+     }
