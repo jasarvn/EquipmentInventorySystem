@@ -82,6 +82,10 @@
     background: #7ca9fc;
 }
 
+.menu_card h6 {
+    -webkit-transition: font-size .15s;
+}
+
     .menu_card:hover h6 {
         background: #7ca9fc;
         color: white;

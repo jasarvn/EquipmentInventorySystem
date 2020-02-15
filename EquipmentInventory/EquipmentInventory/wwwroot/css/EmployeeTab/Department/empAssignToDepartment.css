@@ -75,9 +75,9 @@
     .page_container_div .page_title {
         display: grid;
         display: -ms-grid;
-        grid-template-columns: 525px 1fr 525px;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        -ms-grid-columns: 525px 1fr 525px;
+        -ms-grid-columns: 1fr;
         -ms-grid-rows: 1fr;
      }
 

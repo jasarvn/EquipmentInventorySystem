@@ -7,27 +7,247 @@
 }
 <link rel="stylesheet" href="~/css/EmployeeTab/Department/empAssignToDepartment.css" />
 <style>
-   
+   /* Menu */
+#cssmenu ul {
+    display: flex; /* A key part of our menu, displays items side by side, and allows reversing them */
+    flex-direction: row-reverse; /* Reverse the items */
+}
+
+/* Background container */
+#cssmenu-container {
+    height: 220px;
+    background-color: #CEE3F8;
+}
+
+/* Menu container */
+    #cssmenu {
+        display: inline-block; /* The menu will have width as needed, not 100% */
+        font-family: Helvetica, sans-serif;
+        font-size: 7px;
+        line-height: .8em;
+        border-radius: 2px; /* Little curvature in the borders */
+        overflow: hidden; /* Hide everything that overflows, like shadows */
+    }
+
+/* Icons */
+#cssmenu i {
+    transform: scale(1.4);
+}
+
+/* Menu */
+#cssmenu ul {
+    display: flex; /* A key part of our menu, displays items side by side, and allows reversing them */
+    flex-direction: row-reverse; /* Reverse the items */
+    /* Reset styles, overwrite browser defaults */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu ul li {
+    margin: 0;
+}
+
+
+/* Menu items */
+#cssmenu ul li a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 0.6em;
+    font-weight: 600;
+    padding: 8px 30px 8px 45px; /* Adjusting padding to get the proper space */
+    margin-left: -20px; /* Pull the items to the left, so the rounded right side will get over them */
+    color: white;
+    background-color: #428EFE;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0 100px 100px 0; /* Get the right side rounded */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Apply the shadow */
+}
+
+/* Hover event */
+#cssmenu ul li:hover a {
+    background-color: #297EFE;
+}
+
+/* Remove the shadow for first item, last in the right side when it gets reversed */
+#cssmenu ul li:first-child a {
+    box-shadow: none;
+}
+
+/* Active item is a bit different */
+#cssmenu ul li.active a {
+    color: #428EFE;
+    background-color: #EEF5FF;
+}
+
+/* Remove the shadow for the active's next item, to match the design more accurately */
+#cssmenu ul li.active + li a {
+    box-shadow: none;
+}
+
+
+/*start*/
+
+.select_bar_container{
+	display: inline-block;
+  cursor: pointer;
+  position: relative; 
+  top: -02px;
+}
+.custome_select_container{
+  width: 300px;
+  height: 30px;
+  background: White;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  grid-template-rows: 1fr;
+  border: 1px solid #d4d5d6;
+}
+
+input {
+   width: 100%;height: 54%;
+   text-align: center;
+   padding: 5px 0px;
+   border:none;
+   background: none;
+   cursor: pointer;
+}
+input:focus {
+    outline-width: 0;
+}
+
+
+
+
+input::placeholder{
+  color: gray
+}
+    #dropdownSelect {
+        width: 100%;
+        height: 190px;
+        background: white;
+        display: none;
+        -webkit-animation: slide-down .3s ease-out;
+        -moz-animation: slide-down .3s ease-out;
+    }
+    
+    #dropdownSelectcontainer div:hover {
+      background:blue;
+      cursor:pointer;
+    }
+ 
+@@-webkit-keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translatey(-25%); }   
+    100% { opacity: 1; -webkit-transform: translatey(0); }
+}
+@@-moz-keyframes slide-down {
+      0% { opacity: 0; -moz-transform: translateY(-100%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+#dropdownSelect{
+      box-shadow: -.25rem .5rem .50rem rgba(0, 0, 0, .25), 
+                   .1rem .25rem .50rem rgba(0, 0, 0, .20), 
+                    1rem .35rem .75rem rgba(0, 0, 0, .15);
+      margin-top: 2px;
+      position:relative;
+      z-index:999;
+}
+#dropdownSelectcontainer{
+      width: 100%;
+      height: 100%;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 30px 30px 30px 30px 30px 30px;
+}
+
+#selector_arrow_container{
+   height: 70%;
+   width: 100%;
+   position: relative;
+   top: 3px;
+   box-shadow: -.05rem 0rem .01rem rgba(0, 0, 0, .15);
+   border-left: 1px solid #adaaaa;
+}
+#selector_arrow_container i {
+   margin-top: 4px;
+   padding-left: 8px;
+}
+
+/*end*/
 
 
 </style>
 <div class="page_container_div">
     <div class="grid_row1 grid_col1 page_title">
-        <div class="grid_col1 grid-row1" style="background: green"></div>
-        <div class="grid_col2 grid-row1"></div>
-        <div class="grid_col3 grid-row1" style="background: green"></div>
+        <div class="grid_col1 grid-row1" style="text-align: left;">
+
+            <div id="cssmenu">
+                <ul>
+                    <li class="active"><a href="#">Assign Department</a></li>
+                    <li><a href="#"><i class="fas fa-columns" style="padding-right: 3px;"></i> Dashboard</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        
     </div>
 
     <div class="grid_row2 grid_col1 page_level_div">
-        <div class="grid_col1 grid-row1" style="background: red"></div>
+        <div class="grid_col1 grid-row1" style="font-weight:bolder;">
+            <span>List of un-assigned employees</span>
+        </div>
         <div class="grid_col2 grid-row1"></div>
-        <div class="grid_col3 grid-row1" style="background: red"></div>
+        <div class="grid_col3 grid-row1">
+
+            <div class="select_bar_container">
+
+                <div class="custome_select_container" onclick="onclickSelect()">
+                    <div class="select_con">
+                        <input id="select_input" type="text" readonly placeholder="Select Department" />
+                    </div>
+                    <div class="selector_arrow">
+                        <div id="selector_arrow_container">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dropdownSelect">
+                    <div id="dropdownSelectcontainer">
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 1
+                        </div>
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 2
+                        </div>
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 3
+                        </div>
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 4
+                        </div>
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 5
+                        </div>
+                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
+                            Department 6
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
     </div>
 
     <div class="grid_row3 grid_col1 page_level_search" >
-        <div class="grid_col1 grid-row1" style="background: yellow"></div>
+        <div class="grid_col1 grid-row1" style="background: #d9d9d9"></div>
         <div class="grid_col2 grid-row1"></div>
-        <div class="grid_col3 grid-row1" style="background: yellow"></div>
+        <div class="grid_col3 grid-row1" style="background: #d9d9d9"></div>
     </div>
 
     <div class="grid_col1 grid_row4 div_grid_container">
@@ -98,6 +318,8 @@
 
     $("#jsGrid2").jsGrid({
         height: "440px",
+        width: "100%",
+        filtering: false,
         inserting: false,
         editing: false,
         sorting: true,
@@ -107,14 +329,30 @@
         data: clients,
 
         fields: [
-            { name: "Id", type: "text", width: 85},
-            { name: "Name", type: "number", width: 220 },
-            { name: "HireDate",type: "Date", width: 220,  align: "center" },
-
+            { name: "Selected", type: "checkbox", width: 20, title: ""},
+            { name: "Id", type: "text", width: 65, validate: "required" },
+            { name: "Name", type: "number", width: 220,align: "left" },
+            { name: "HireDate", type: "Date",align: "center", width: 220 },
+            
         ]
     });
 
-
+    var select_status = 0
+function onclickSelect() {
+  
+  if(select_status == 0){
+  select_status=1;
+      document.getElementById('dropdownSelect').style.display = "block";
+      document.getElementById('selector_arrow_container').innerHTML = "<i class=\"fas fa-caret-up\" style=\"margin-top: 4px;padding-left: 8px;\"></i>"
+      
+  }
+  else{
+  select_status=0
+  document.getElementById('dropdownSelect').style.display = "none";
+   document.getElementById('selector_arrow_container').innerHTML = "<i class=\"fas fa-caret-down\" style=\"margin-top: 4px;padding-left: 8px;\"></i>"  
+  /* document.getElementById('dropdownSelect').style.opacity = 0;*/
+  }
+}
    
 </script>
 
