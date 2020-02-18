@@ -132,10 +132,7 @@ input::placeholder{
         -moz-animation: slide-down .3s ease-out;
     }
     
-    #dropdownSelectcontainer div:hover {
-      background:blue;
-      cursor:pointer;
-    }
+
  
 @@-webkit-keyframes slide-down {
       0% { opacity: 0; -webkit-transform: translatey(-25%); }   
@@ -147,6 +144,7 @@ input::placeholder{
 }
 
 #dropdownSelect{
+      height: auto;
       box-shadow: -.25rem .5rem .50rem rgba(0, 0, 0, .25), 
                    .1rem .25rem .50rem rgba(0, 0, 0, .20), 
                     1rem .35rem .75rem rgba(0, 0, 0, .15);
@@ -157,25 +155,76 @@ input::placeholder{
 #dropdownSelectcontainer{
       width: 100%;
       height: 100%;
-      display:grid;
+      display: grid;
+      grid-template-rows: 1fr;
       grid-template-columns: 1fr;
-      grid-template-rows: 30px 30px 30px 30px 30px 30px;
 }
 
-#selector_arrow_container{
-   height: 70%;
-   width: 100%;
-   position: relative;
-   top: 3px;
-   box-shadow: -.05rem 0rem .01rem rgba(0, 0, 0, .15);
-   border-left: 1px solid #adaaaa;
-}
-#selector_arrow_container i {
-   margin-top: 4px;
-   padding-left: 8px;
-}
+    #selector_arrow_container {
+        height: 70%;
+        width: 100%;
+        position: relative;
+        top: 3px;
+        box-shadow: -.05rem 0rem .01rem rgba(0, 0, 0, .15);
+        border-left: 1px solid #adaaaa;
+    }
+
+        #selector_arrow_container i {
+            margin-top: 4px;
+            padding-left: 8px;
+        }
 
 /*end*/
+
+/*start*/
+.dropdown_select {
+  background: white;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,30px);
+  grid-gap: 2px;
+  border: 1px solid #dededc;
+}
+
+.dropdown_select_row {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+}
+    
+.row2{
+   width: 90%; height: 100%;
+   border-bottom: 1px solid #dededc;
+   margin: auto;
+   padding-left: 20x;
+   color: #b8b8b6;
+   font-size: 11px;
+}
+.row_select:hover{
+   cursor: pointer;
+ background:#e8e8e6;
+ 
+}
+.row2 span
+{
+   position: relative; 
+   top: 5px;
+   left: 20px;
+}
+.row_select:hover .row2{
+ font-size: 14px;
+color: #6e6e6d;
+
+}
+
+.row_select:hover span{
+top: 3px;
+}
+
+
+/*end*/
+
 
 
 </style>
@@ -195,7 +244,7 @@ input::placeholder{
     </div>
 
     <div class="grid_row2 grid_col1 page_level_div">
-        <div class="grid_col1 grid-row1" style="font-weight:bolder;">
+        <div class="grid_col1 grid-row1" style="font-weight: bolder;">
             <span>List of un-assigned employees</span>
         </div>
         <div class="grid_col2 grid-row1"></div>
@@ -216,24 +265,51 @@ input::placeholder{
 
                 <div id="dropdownSelect">
                     <div id="dropdownSelectcontainer">
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 1
+
+                        <!--start-->
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_row" onclick="onclickSelect2('Rachel Jasmine Abella')">
+
+                                <div class="row_select">
+                                    <div class="row2">
+                                        <span>Rachel Jasmine Abella</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown_select_row" onclick="onclickSelect2('Meent Oswald Prudenciado')">
+
+                                <div class="row_select">
+                                    <div class="row2">
+                                        <span>Meent Oswald Prudenciado</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown_select_row" onclick="onclickSelect2('Ruthchil Prudenciado')">
+
+                                <div class="row_select">
+                                    <div class="row2">
+                                        <span>Ruthchil Prudenciado</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown_select_row" onclick="onclickSelect2('jasper Abella')">
+
+                                <div class="row_select">
+                                    <div class="row2" style="border: none;">
+                                        <span>jasper Arvin L. Abella</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 2
-                        </div>
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 3
-                        </div>
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 4
-                        </div>
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 5
-                        </div>
-                        <div style="border-bottom: 1px solid gray;margin:1px 5px;padding-left: 25px;">
-                            Department 6
-                        </div>
+                        <!--end-->
 
                     </div>
 
@@ -352,6 +428,18 @@ function onclickSelect() {
    document.getElementById('selector_arrow_container').innerHTML = "<i class=\"fas fa-caret-down\" style=\"margin-top: 4px;padding-left: 8px;\"></i>"  
   /* document.getElementById('dropdownSelect').style.opacity = 0;*/
   }
+}
+
+
+    function onclickSelect2(nameData) {
+  
+  
+  select_status=0
+  document.getElementById('dropdownSelect').style.display = "none";
+   document.getElementById('selector_arrow_container').innerHTML = "<i class=\"fas fa-caret-down\" style=\"margin-top: 4px;padding-left: 8px;\"></i>"  
+  document.getElementById('select_input').value = nameData;
+    /* document.getElementById('dropdownSelect').style.opacity = 0;*/
+  
 }
    
 </script>
